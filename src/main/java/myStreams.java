@@ -21,16 +21,8 @@ public class myStreams {
                 .collect(Collectors.toList());
     }
 
-    public static String generateFizzBuzz () {
-        return null;
+    public static String generateFizzBuzz (int n) {
+        String result = (n % 3 == 0 ? "Fizz" : "") + (n % 5 == 0 ? "Buzz" : "");
+        return result.isEmpty() ? Integer.toString(n) : result;
     }
-
-    public static String getMyFizzBuzz(int number) {
-        String result =  Optional.of(number)
-                .map(n -> (n % 3 == 0 ? myFizzBuzzMap.get(3) : "") + (n % 5 == 0 ? myFizzBuzzMap.get(5) : ""))
-                .get();
-
-        return result.isEmpty() ? Integer.toString(number) : result;
-    }
-
 }

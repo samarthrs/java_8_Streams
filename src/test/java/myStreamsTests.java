@@ -75,18 +75,44 @@ public class myStreamsTests {
     }
 
     @Test
-    public void whenStreamHasNoRange() {
-        String expResult = null;
-        assertEquals(expResult, myStreams.generateFizzBuzz());
+    public void whenStreamHasNumberThree() {
+        String expResult = "Fizz";
+        assertEquals(expResult, myStreams.generateFizzBuzz(3));
     }
 
-//    @Test
-//    public void whenStreamHasOneNumberToCheck() {
-//        String expResult = "Fizz";
-//        assertEquals(expResult, myStreams.generateFizzBuzz(3));
-//    }
+    @Test
+    public void whenStreamHasNumberFive() {
+        String expResult = "Buzz";
+        assertEquals(expResult, myStreams.generateFizzBuzz(5));
+    }
 
+    @Test
+    public void whenStreamHasNumberSix() {
+        String expResult = "Fizz";
+        assertEquals(expResult, myStreams.generateFizzBuzz(6));
+    }
 
+    @Test
+    public void whenStreamHasNumberNine() {
+        String expResult = "Fizz";
+        assertEquals(expResult, myStreams.generateFizzBuzz(9));
+    }
 
+    @Test
+    public void whenStreamHasNumberTen() {
+        String expResult = "Buzz";
+        assertEquals(expResult, myStreams.generateFizzBuzz(10));
+    }
 
+    @Test
+    public void whenStreamHasNumberTwelve() {
+        String expResult = "Fizz";
+        assertEquals(expResult, myStreams.generateFizzBuzz(12));
+    }
+
+    @Test
+    public void whenStreamHasNumberFifteen() {
+        String expResult = "FizzBuzz";
+        assertEquals(expResult, myStreams.generateFizzBuzz(15));
+    }
 }
