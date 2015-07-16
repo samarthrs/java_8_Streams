@@ -25,4 +25,8 @@ public class myStreams {
         String result = (n % 3 == 0 ? "Fizz" : "") + (n % 5 == 0 ? "Buzz" : "");
         return result.isEmpty() ? Integer.toString(n) : result;
     }
+
+    public static String generateFizzBuzz () {
+        return null;
+    }
 }

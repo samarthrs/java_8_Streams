@@ -115,4 +115,10 @@ public class myStreamsTests {
         String expResult = "FizzBuzz";
         assertEquals(expResult, myStreams.generateFizzBuzz(15));
     }
+
+    @Test
+    public void whenStreamHasNoParameters() {
+        String expResult = null;
+        assertEquals(expResult, myStreams.generateFizzBuzz());
+    }
 }
